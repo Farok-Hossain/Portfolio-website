@@ -7,7 +7,6 @@ const data = [
   {
     id: 1,
     image: doctor,
-    title: "Privacy Firewall App",
     server: "https://github.com/Farok-Hossain/doctors-portal-server",
     client: "https://github.com/Farok-Hossain/doctors-portal-client",
     demo: "https://doctors-portal-ec125.firebaseapp.com",
@@ -15,7 +14,6 @@ const data = [
   {
     id: 2,
     image: doctor,
-    title: "Privacy Firewall App",
     server: "https://github.com/Farok-Hossain/doctors-portal-server",
     client: "https://github.com/Farok-Hossain/doctors-portal-client",
     demo: "https://doctors-portal-ec125.firebaseapp.com",
@@ -23,7 +21,6 @@ const data = [
   {
     id: 3,
     image: doctor,
-    title: "Privacy Firewall App",
     server: "https://github.com/Farok-Hossain/doctors-portal-server",
     client: "https://github.com/Farok-Hossain/doctors-portal-client",
     demo: "https://doctors-portal-ec125.firebaseapp.com",
@@ -36,14 +33,14 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
-        {data.map(({ id, image, title, server, client, demo }) => {
+      <div style={{ width: 900 }} className="container portfolio__container">
+        {data.map(({ id, image, server, client, demo }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} alt={title} />
+                <img style={{ width: 400 }} src={image} />
               </div>
-              <h3>{title}</h3>
+              <br />
               <div className="portfolio__item-cta">
                 <a href={server} className="btn" target="_blank">
                   Server Github Code
