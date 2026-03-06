@@ -16,7 +16,7 @@ const Contact = () => {
         "service_zkfq755",
         "template_5ehra4o",
         form.current,
-        "m8PBRmWY5IiR2myCO"
+        "m8PBRmWY5IiR2myCO",
       )
       .then(
         (result) => {
@@ -24,7 +24,7 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
     e.target.reset();
   };
@@ -41,7 +41,7 @@ const Contact = () => {
             <h4>Email</h4>
             <h5>farokafs7@gmail.com</h5>
             <a href="mailto:farokafs7@gmail.com" target="_blank">
-              Send a message
+              Send a messag
             </a>
           </article>
           <article className="contact__option">
@@ -50,7 +50,7 @@ const Contact = () => {
             <h5>Farok Hossain</h5>
             <a
               href="https://m.me/profile.php?id=100006429429427"
-              target="_blank"
+              target="blank"
             >
               Send a message
             </a>
@@ -61,13 +61,12 @@ const Contact = () => {
             <h5>+8801618603009</h5>
             <a
               href="https://api.whatsapp.com/send?phone+8801618603009"
-              target="_blank"
+              target="blank"
             >
               Send a message
             </a>
           </article>
         </div>
-        {/* End of Contact Options */}
 
         <form ref={form} onSubmit={sendEmail}>
           <input
